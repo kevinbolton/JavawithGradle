@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.redteam.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-25T08:45:42" hostname="A0201-149" time="0.002">
+  <properties/>
+  <testcase name="sayHello" classname="com.redteam.MainTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

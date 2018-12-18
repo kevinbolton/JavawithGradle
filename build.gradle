@@ -1,0 +1,35 @@
+// Adds Java compilation along with testing and bundling capabilities to a project.
+// Defines which language version of Java your source files should be treated as.
+// Defines the minimum JVM version your code should run on, i.e. it determines the version of byte code the compiler generates.
+apply plugin: 'java' 
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+buildscript {
+    repositories {mavenCentral()}
+    dependencies {classpath 'org.owasp:dependency-check-gradle:+'}
+}
+apply plugin: 'org.owasp.dependencycheck'
+
+repositories {mavenCentral()}
+
+dependencies {
+    testCompile 'junit:junit:4.+'
+    compile group: 'org.webjars', name: 'jquery-file-upload', version: '8.4.2'
+    compile 'commons-codec:commons-codec:1.8'
+    compile 'org.apache.logging.log4j:log4j-core:2.8.1'
+}
+
+// Adds tasks for running and bundling a Java project as a command-line application.
+// First class to run is com.redteam.Main
+apply plugin: 'application'
+mainClassName = 'com.redteam.Main'
+
+javadoc.options.encoding = 'UTF-8'
+compileJava.options.encoding = 'UTF-8'
+
+// Which class of main() should be executed when the JAR starts
+jar {
+    manifest {attributes 'Main-Class': 'com.redteam.Main'}
+    version = '1.0.0'
+}

@@ -1,0 +1,46 @@
+{
+  "name": "customer-webapp",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bower update && bower update uu -f && grunt serve",
+    "build": "bower update && bower update uu -f && grunt build"
+  },
+  "dependencies": {
+    "npm": "^6.4.1",
+    "vscode": "^1.1.21"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^0.3.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ember-templates": "0.4.14",
+    "grunt-gitinfo": "^0.1.8",
+    "grunt-mocha": "^1.0.4",
+    "grunt-neuter": "^0.6.0",
+    "grunt-nginx": "^0.2.2",
+    "grunt-open": "^0.2.0",
+    "grunt-replace": "^1.0.1",
+    "grunt-rev": "^0.1.0",
+    "grunt-svgmin": "^4.0.0",
+    "grunt-usemin": "^3.1.1",
+    "jshint-stylish": "^2.2.1",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

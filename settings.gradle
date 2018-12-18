@@ -1,0 +1,3 @@
+[settings.gradle]
+// list subprojects(subdirectories) here
+include 'OWASPDC'

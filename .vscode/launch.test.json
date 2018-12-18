@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "JavawithGradle",
+                "projectName": "JavawithGradle",
+                "workingDirectory": "c:\\Users\\kevin_bolton\\Documents\\Kevin\\repo\\JavawithGradle",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "JavawithGradle",
+                "projectName": "JavawithGradle",
+                "workingDirectory": "c:\\Users\\kevin_bolton\\Documents\\Kevin\\repo\\JavawithGradle",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
